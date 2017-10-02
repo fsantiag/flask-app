@@ -4,5 +4,5 @@ setup(name='HelloWorld',
       author='Felipe Santiago',
       author_email='fsantiag@thoughtworks.comi',
       version='1.0',
-      py_modules=['hello'],
+      py_modules=['iphone8'],
 )
