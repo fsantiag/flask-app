@@ -1,0 +1,45 @@
+.home-page {
+  background-color: black;
+  text-align: center;
+  padding-top: 1em;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.home-page__title {
+  color: #fff;
+  font-weight: normal;
+}
+
+.home-page__description {
+  padding: 0 22em 3em 22em;
+  color: #ccc;
+  line-height: 1.45455;
+  font-weight: 300;
+  letter-spacing: .016em;
+}
+
+.section-title {
+  font-weight: 300;
+  letter-spacing: .015em;
+  color: #ccc;
+}
+
+.section-subtitle {
+	letter-spacing: .006em;
+  color: #fff;
+  margin: 0 auto;
+  padding-bottom: 1em;
+  max-width: 13em;
+  font-weight: 400;
+}
+
+.wait-for-it {
+  color: #fff;
+  font-weight: normal;
+  padding-bottom: 1em;
+}
+
+img {
+  width: 40%;
+  padding-bottom: 4em;
+}
