@@ -1,0 +1,28 @@
+---
+- hosts: all
+  user: fsantiag
+  become: true
+
+  tasks:
+
+  - name: Install Git
+    apt: pkg=git state=installed update_cache=true
+
+  - name: Install Pip3
+    apt: pkg=python3-pip state=installed update_cache=true
+
+  - pip:
+      name: flask
+      executable: pip3
+
+  - name: Clone app
+    git: repo=https://user:password@github.com/jfelipefilho/flask-app.git dest=/home/fsantiag/flask-app
+
+  - name: Copy service iphone8 init script
+    copy: src=/home/fsantiag/flask-app/fsantiag.service dest=/etc/systemd/system remote_src=true owner=root group=root
+
+  - name: Start iphone8 service
+    command: systemctl enable fsantiag.service
+
+  - name: Reboot
+    command: reboot
