@@ -1,0 +1,11 @@
+[Unit]
+Description=Start Iphone8 flask app
+
+[Service]
+User=fsantiag
+WorkingDirectory=/home/fsantiag/flask-app
+ExecStart=/bin/bash start-server.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
